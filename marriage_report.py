@@ -49,8 +49,8 @@ def save_married_couples_csv(married_couples, csv_path):
     """
     # TODO: Function body
     neat_married_coupples = pd.DataFrame(married_couples)
-
-    neat_married_coupples.to_csv(csv_path, index=False)
+    header = ['partner 1', 'partner 2', 'Start Date']
+    neat_married_coupples.to_csv(csv_path, index=False, header=header)
     return
 
 if __name__ == '__main__':
